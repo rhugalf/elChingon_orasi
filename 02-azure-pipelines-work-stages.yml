@@ -10,6 +10,7 @@ stages:
   - job: Job1erJob_BBBB 
     steps:
     - bash: echo Hola puto Build
+    - bash: echo isino te kojo $(PipelineVariableLevel) veces
   - job: Job2doJob_BBBB
     steps:
     - bash: echo puto 2o Build  
@@ -19,6 +20,7 @@ stages:
   - job: Job1erJob_DEV
     steps:
     - bash: echo Hola puto DEV
+    - bash: echo isino te kojo $(PipelineVariableLevel) veces
   - job: Job2doJob_DEV
     steps:
     - bash: echo puto 2o DEV  
@@ -28,6 +30,7 @@ stages:
   - job: Job1erJob_QA
     steps:
     - bash: echo Hola puto QA
+    - bash: echo isino te kojo $(PipelineVariableLevel) veces
   - job: Job2doJob_QA
     steps:
     - bash: echo puto 2o QA  
@@ -39,6 +42,7 @@ stages:
   - job: Job1erJob_PRD
     steps:
     - bash: echo Hola puto PRD
+    - bash: echo isino te kojo $(PipelineVariableLevel) veces
   - job: Job2doJobPRD
     steps:
     - bash: echo puto 2o PRD  
