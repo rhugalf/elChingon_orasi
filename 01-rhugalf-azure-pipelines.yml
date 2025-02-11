@@ -43,3 +43,11 @@ jobs:
       echo Add other tasks to build, test, and deploy your project.
       echo See https://aka.ms/yaml
     displayName: 'Run a multi-line script 3erooo'
+
+- job: Job4
+  dependsOn: 
+  - Job2ZZZ
+  - Job1HG
+  steps:
+  - script: 4ooooo PERDEDOR!!!!
+    displayName: 'Run a one-line script seraaa?'
