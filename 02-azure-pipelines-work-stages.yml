@@ -7,31 +7,31 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: 1erJob BBBB 
+  - job: 1erJob_BBBB 
     steps:
     - bash: echo Hola puto Build
-  - job: 2doJob BBBB
+  - job: 2doJob_BBBB
     steps:
     - bash: echo puto 2o Build  
 - stage: DevDeploy
   jobs:
-  - job: 1erJob DEV
+  - job: 1erJob_DEV
     steps:
     - bash: echo Hola puto DEV
-  - job: 2doJob DEV
+  - job: 2doJob_DEV
     steps:
     - bash: echo puto 2o DEV  
 - stage: QADeploy
   jobs:
-  - job: 1erJob QA
+  - job: 1erJob_QA
     steps:
     - bash: echo Hola puto QA
-  - job: 2doJob QA
+  - job: 2doJob_QA
     steps:
     - bash: echo puto 2o QA  
 - stage: PrdDeploy
   jobs:
-  - job: 1erJob PRD
+  - job: 1erJob_PRD
     steps:
     - bash: echo Hola puto PRD
   - job: 2doJobPRD
