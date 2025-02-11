@@ -23,7 +23,7 @@ jobs:
     displayName: 'Run a multi-line script'
 
 - job: Job2ZZZ
-  dependsOn:Job1HG
+  dependsOn: Job1HG
   steps:
   - script: echo Hello 2222, world super puto de ti HUGO!
     displayName: 'Run a one-line script'
@@ -34,7 +34,7 @@ jobs:
     displayName: 'Run a multi-line script'
 
 - job: Job33333
-  dependsOn:Job2ZZZ
+  dependsOn: Job2ZZZ
   steps:
   - script: echo Hello 34er PERDEDOR!!!!
     displayName: 'Run a one-line script seraaa?'
