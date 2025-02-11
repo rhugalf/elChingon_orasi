@@ -6,9 +6,38 @@ pool:
 
 stages:
 - stage: Build
+  jobs:
+  - job: 1erJob BBBB 
+    steps:
+    - bash: echo Hola puto Build
+  - job: 2doJob BBBB
+    steps:
+    - bash: echo puto 2o Build  
 - stage: DevDeploy
+  jobs:
+  - job: 1erJob DEV
+    steps:
+    - bash: echo Hola puto DEV
+  - job: 2doJob DEV
+    steps:
+    - bash: echo puto 2o DEV  
 - stage: QADeploy
+  jobs:
+  - job: 1erJob QA
+    steps:
+    - bash: echo Hola puto QA
+  - job: 2doJob QA
+    steps:
+    - bash: echo puto 2o QA  
 - stage: PrdDeploy
+  jobs:
+  - job: 1erJob PRD
+    steps:
+    - bash: echo Hola puto PRD
+  - job: 2doJobPRD
+    steps:
+    - bash: echo puto 2o PRD  
+
 
 steps:
 - script: echo Hello, world!
