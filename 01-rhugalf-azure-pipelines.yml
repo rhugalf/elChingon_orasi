@@ -49,5 +49,5 @@ jobs:
   - Job2ZZZ
   - Job1HG
   steps:
-  - script: 4ooooo PERDEDOR!!!!
+  - script: echo 4ooooo PERDEDOR!!!!
     displayName: 'Run a one-line script seraaa?'
