@@ -38,7 +38,3 @@ stages:
     steps:
     - bash: echo puto 2o PRD  
 
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
