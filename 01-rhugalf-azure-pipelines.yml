@@ -9,11 +9,25 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world super puto de ti HUGO!
-  displayName: 'Run a one-line script'
+#Pipelines > Stages > Jobs > Tasks
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+jobs:
+- job : Job1HG
+  steps:
+  - script: echo Hello 11111, world super puto de ti HUGO!
+    displayName: 'Run a one-line script'
+
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
+
+- job: Job2ZZZ
+  steps:
+  - script: echo Hello 2222, world super puto de ti HUGO!
+    displayName: 'Run a one-line script'
+
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
