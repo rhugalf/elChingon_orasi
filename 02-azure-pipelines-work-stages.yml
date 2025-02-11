@@ -14,6 +14,7 @@ stages:
     steps:
     - bash: echo puto 2o Build  
 - stage: DevDeploy
+  dependsOn: Build
   jobs:
   - job: Job1erJob_DEV
     steps:
@@ -22,6 +23,7 @@ stages:
     steps:
     - bash: echo puto 2o DEV  
 - stage: QADeploy
+  dependsOn: Build
   jobs:
   - job: Job1erJob_QA
     steps:
@@ -30,6 +32,9 @@ stages:
     steps:
     - bash: echo puto 2o QA  
 - stage: PrdDeploy
+  dependsOn:
+  - DevDeploy
+  - QADeploy
   jobs:
   - job: Job1erJob_PRD
     steps:
